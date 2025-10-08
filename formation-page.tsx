@@ -42,7 +42,16 @@ const FormationPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-purple-800 to-indigo-900">
       {/* Header */}
-      <header className="py-4 px-4">
+      <header 
+        className="py-4 px-4"
+        style={{
+          backgroundImage: 'url(images/BACKGROUND.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundAttachment: 'fixed'
+        }}
+      >
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-center">
             <div className="text-white text-4xl font-bold bg-purple-600 px-6 py-3 rounded-lg">
@@ -53,7 +62,16 @@ const FormationPage = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="py-12 px-4">
+      <section 
+        className="py-12 px-4"
+        style={{
+          backgroundImage: 'url(images/BACKGROUND.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundAttachment: 'fixed'
+        }}
+      >
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             {/* Left Column - Text */}
@@ -318,7 +336,17 @@ const FormationPage = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black py-8 px-4">
+      <footer 
+        className="bg-black py-8 px-4"
+        style={{
+          backgroundImage: 'url(images/BACKGROUND.png), linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7))',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundAttachment: 'fixed',
+          backgroundBlendMode: 'overlay'
+        }}
+      >
         <div className="max-w-7xl mx-auto text-center">
           <div className="text-white text-3xl font-bold mb-4">ANTA2L</div>
           <div className="text-white mb-2">

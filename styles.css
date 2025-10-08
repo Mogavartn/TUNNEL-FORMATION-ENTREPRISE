@@ -22,7 +22,8 @@ body {
 /* Header Section */
 .header-section {
     padding: 20px 0;
-    background: transparent;
+    background: url('images/BACKGROUND.png') center/cover no-repeat;
+    background-attachment: fixed;
 }
 
 .header-content {
@@ -42,6 +43,8 @@ body {
     min-height: 80vh;
     display: flex;
     align-items: center;
+    background: url('images/BACKGROUND.png') center/cover no-repeat;
+    background-attachment: fixed;
 }
 
 .hero-grid {
@@ -420,7 +423,8 @@ body {
 
 /* Footer */
 .footer {
-    background: #000;
+    background: url('images/BACKGROUND.png') center/cover no-repeat, #000;
+    background-attachment: fixed;
     color: white;
     padding: 40px 0;
 }
