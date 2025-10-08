@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation Création d'Entreprise</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Asap:wght@400&family=Lato:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <form id="form-checkout">
+            <!-- Header Section -->
+            <section class="header-section">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="logo-container">
+                            <a href="https://www.instagram.com/kevin_a2ta2l/" target="_blank" rel="noopener noreferrer">
+                                <img src="images/logo.png" alt="ANTA2L Logo" class="logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="container">
+                    <div class="hero-grid">
+                        <!-- Left Column - Text Content -->
+                        <div class="hero-text">
+                            <h1 class="hero-title">
+                                Créez votre <span class="highlight">ENTREPRISE</span><br>
+                                et Lancez votre <span class="highlight">ACTIVITÉ</span><br>
+                                avec <span class="highlight">SUCCÈS</span> ! 🚀
+                            </h1>
+                            
+                            <div class="hero-subtitle">
+                                <p class="subtitle-line">✨<strong>Une idée ?</strong>✨</p>
+                                <p class="subtitle-text">On vous montre comment la transformer en business qui cartonne.</p>
+                                <p class="subtitle-text">Formation en ligne, pratique et sans bla-bla</p>
+                                <p class="price-highlight">Un seul paiement de 299€ !</p>
+                            </div>
+
+                            <a href="#formulaire" class="cta-button primary">
+                                👉 OUI ! JE VEUX LA FORMATION
+                            </a>
+                        </div>
+
+                        <!-- Right Column - Images and Form -->
+                        <div class="hero-right">
+                            <div class="images-container">
+                                <img src="images/iphone.png" alt="iPhone" class="hero-image iphone">
+                                <img src="images/laptop.png" alt="Laptop" class="hero-image laptop">
+                            </div>
+                            
+                            <!-- Two-Step Payment Form -->
+                            <div id="formulaire" class="payment-form">
+                                <div class="form-steps">
+                                    <div class="step-indicator active" data-step="1">
+                                        <div class="step-number">1</div>
+                                        <div class="step-info">
+                                            <div class="step-title">Étape 1 :</div>
+                                            <div class="step-subtitle">INFORMATIONS SUR L'ACHETEUR</div>
+                                        </div>
+                                    </div>
+                                    <div class="step-indicator" data-step="2">
+                                        <div class="step-number">2</div>
+                                        <div class="step-info">
+                                            <div class="step-title">Étape 2 :</div>
+                                            <div class="step-subtitle">VÉRIFICATION PAR LE CLIENT</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Step 1 Form -->
+                                <div id="step-1" class="form-step active">
+                                    <form id="step1-form" class="form-content">
+                                        <div class="form-row">
+                                            <input type="text" name="firstName" placeholder="Prénom" required>
+                                            <input type="text" name="lastName" placeholder="Nom de famille" required>
+                                        </div>
+                                        
+                                        <input type="email" name="email" placeholder="Email" required>
+                                        <input type="text" name="address" placeholder="Adresse complète" required>
+                                        <input type="text" name="city" placeholder="Ville" required>
+                                        
+                                        <select name="country">
+                                            <option value="FR">France</option>
+                                            <option value="BE">Belgique</option>
+                                            <option value="CH">Suisse</option>
+                                            <option value="CA">Canada</option>
+                                        </select>
+                                        
+                                        <input type="text" name="postalCode" placeholder="Code postal" required>
+                                        
+                                        <button type="submit" class="cta-button form-submit">
+                                            👉 OUI ! je profite de cette FORMATION !<br>
+                                            <small>OUI ! Je veux la formation MAINTENANT !</small>
+                                        </button>
+                                        
+                                        <p class="form-disclaimer">
+                                            *Vos informations sont sécurisées et ne seront pas partagées.
+                                        </p>
+                                    </form>
+                                </div>
+
+                                <!-- Step 2 Form -->
+                                <div id="step-2" class="form-step">
+                                    <div class="form-content">
+                                        <div class="order-summary">
+                                            <div class="summary-title">Formation Création Entreprise</div>
+                                            <div class="summary-price">299€</div>
+                                            <div class="summary-subtitle">Total (TTC)</div>
+                                        </div>
+
+                                        <div class="buyer-info">
+                                            <p><strong>Informations de l'acheteur :</strong></p>
+                                            <div id="buyer-details"></div>
+                                        </div>
+
+                                        <div class="payment-info">
+                                            <p class="payment-title">Paiement sécurisé</p>
+                                            <p>Le paiement sera traité de manière sécurisée via Stripe.</p>
+                                            <p class="payment-note">* Cette est une simulation. Le backend doit être implémenté pour traiter les paiements réels.</p>
+                                        </div>
+
+                                        <button type="button" id="final-submit" class="cta-button form-submit">
+                                            Valider ma formation maintenant !
+                                        </button>
+
+                                        <button type="button" id="back-to-step1" class="cta-button secondary">
+                                            Retour
+                                        </button>
+
+                                        <p class="form-disclaimer">
+                                            * Paiements 100% sûrs et sécurisés *
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features-section">
+                <div class="container">
+                    <h2 class="features-title">
+                        👉 <span>POURQUOI CHOISIR CETTE</span> <span class="highlight">FORMATION</span> ?
+                    </h2>
+
+                    <div class="features-grid">
+                        <!-- Left - Image -->
+                        <div class="features-image">
+                            <div class="image-placeholder">
+                                <img src="images/laptop.png" alt="Laptop" class="feature-laptop">
+                                <img src="images/iphone.png" alt="iPhone" class="feature-phone">
+                            </div>
+                        </div>
+
+                        <!-- Middle - Features -->
+                        <div class="features-list">
+                            <div class="feature-card">
+                                <h3>Contenu clair et accessible</h3>
+                                <p>Idéal pour débutants, pas besoin de connaissances préalables.</p>
+                            </div>
+
+                            <div class="feature-card highlight-card">
+                                <h3>Déjà vendu plus de 2 100 fois</h3>
+                                <p>Quand ça marche, ça se partage !</p>
+                            </div>
+
+                            <div class="feature-card highlight-card-2">
+                                <h3>En toute autonomie</h3>
+                                <p>Une approche brute pour aller à l'essentiel, à votre rythme.</p>
+                            </div>
+                        </div>
+
+                        <!-- Right - CTA -->
+                        <div class="features-cta">
+                            <h3 class="cta-title">
+                                🎯 QUI EST CONCERNÉ ? 🎯
+                            </h3>
+                            <p class="cta-text">
+                                Que vous soyez étudiant, en reconversion ou simplement porté par un rêve, cette formation est faite pour vous.
+                            </p>
+                            <p class="cta-highlight">
+                                🏆 Simple, clair, et 100 % action ! 🏆
+                            </p>
+                            <p class="cta-highlight">
+                                🔥 Tarif unique : seulement 299€ ! 🔥
+                            </p>
+                            <a href="#formulaire" class="cta-button secondary">
+                                👉 OUI ! JE VEUX LA FORMATION
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="features-bottom-cta">
+                        <a href="#formulaire" class="cta-button primary large">
+                            👉 OUI ! JE VEUX LA FORMATION
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-logo">ANTA2L</div>
+                        <div class="footer-social">
+                            <a href="https://www.instagram.com/kevin_a2ta2l/" target="_blank" rel="noopener noreferrer">
+                                @kevin_a2ta2l
+                            </a>
+                        </div>
+                        <div class="footer-rights">TOUS DROITS RÉSERVÉS</div>
+                        <div class="footer-legal">
+                            <a href="#">CONDITIONS GÉNÉRALES</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
